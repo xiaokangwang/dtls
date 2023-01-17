@@ -130,6 +130,8 @@ type Config struct {
 
 	// List of application protocols the peer supports, for ALPN
 	SupportedProtocols []string
+
+	SkipHelloVerify bool
 }
 
 func defaultConnectContextMaker() (context.Context, func()) {
