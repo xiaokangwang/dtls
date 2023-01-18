@@ -175,6 +175,7 @@ func createConn(ctx context.Context, nextConn net.Conn, config *Config, isClient
 		initialEpoch:                0,
 		keyLogWriter:                config.KeyLogWriter,
 		sessionStore:                config.SessionStore,
+		skipHelloVerify:             config.SkipHelloVerify,
 	}
 
 	// rfc5246#section-7.4.3
